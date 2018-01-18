@@ -15,8 +15,8 @@
 		182A6CCE201079B900BFC945 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CCD201079B900BFC945 /* main.m */; };
 		182A6CD8201079B900BFC945 /* YYAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CD7201079B900BFC945 /* YYAnimationTests.m */; };
 		182A6CE3201079B900BFC945 /* YYAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CE2201079B900BFC945 /* YYAnimationUITests.m */; };
-		182A6CF72010818400BFC945 /* YYCABasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CF62010818400BFC945 /* YYCABasicAnimation.m */; };
-		182A6CFB2010925F00BFC945 /* YYCAKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CFA2010925F00BFC945 /* YYCAKeyframeAnimation.m */; };
+		182A6D032010B3BF00BFC945 /* YYCABasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6CFF2010B3BF00BFC945 /* YYCABasicAnimation.m */; };
+		182A6D042010B3BF00BFC945 /* YYCAKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A6D012010B3BF00BFC945 /* YYCAKeyframeAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		182A6CDE201079B900BFC945 /* YYAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182A6CE2201079B900BFC945 /* YYAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAnimationUITests.m; sourceTree = "<group>"; };
 		182A6CE4201079B900BFC945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		182A6CF52010818400BFC945 /* YYCABasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCABasicAnimation.h; sourceTree = "<group>"; };
-		182A6CF62010818400BFC945 /* YYCABasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCABasicAnimation.m; sourceTree = "<group>"; };
-		182A6CF92010925F00BFC945 /* YYCAKeyframeAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCAKeyframeAnimation.h; sourceTree = "<group>"; };
-		182A6CFA2010925F00BFC945 /* YYCAKeyframeAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCAKeyframeAnimation.m; sourceTree = "<group>"; };
+		182A6CFE2010B3BF00BFC945 /* YYCABasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCABasicAnimation.h; sourceTree = "<group>"; };
+		182A6CFF2010B3BF00BFC945 /* YYCABasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCABasicAnimation.m; sourceTree = "<group>"; };
+		182A6D012010B3BF00BFC945 /* YYCAKeyframeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCAKeyframeAnimation.m; sourceTree = "<group>"; };
+		182A6D022010B3BF00BFC945 /* YYCAKeyframeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCAKeyframeAnimation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,7 @@
 		182A6CBD201079B800BFC945 /* YYAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				182A6CF82010924900BFC945 /* YYCAKeyframeAnimation */,
-				182A6CF42010818400BFC945 /* YYCABasicAnimation */,
+				182A6CFC2010B3BF00BFC945 /* YYAnimation */,
 				182A6CBE201079B900BFC945 /* AppDelegate.h */,
 				182A6CBF201079B900BFC945 /* AppDelegate.m */,
 				182A6CC1201079B900BFC945 /* ViewController.h */,
@@ -140,20 +139,29 @@
 			path = YYAnimationUITests;
 			sourceTree = "<group>";
 		};
-		182A6CF42010818400BFC945 /* YYCABasicAnimation */ = {
+		182A6CFC2010B3BF00BFC945 /* YYAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				182A6CF52010818400BFC945 /* YYCABasicAnimation.h */,
-				182A6CF62010818400BFC945 /* YYCABasicAnimation.m */,
+				182A6CFD2010B3BF00BFC945 /* YYCABasicAnimation */,
+				182A6D002010B3BF00BFC945 /* YYCAKeyframeAnimation */,
+			);
+			path = YYAnimation;
+			sourceTree = "<group>";
+		};
+		182A6CFD2010B3BF00BFC945 /* YYCABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				182A6CFE2010B3BF00BFC945 /* YYCABasicAnimation.h */,
+				182A6CFF2010B3BF00BFC945 /* YYCABasicAnimation.m */,
 			);
 			path = YYCABasicAnimation;
 			sourceTree = "<group>";
 		};
-		182A6CF82010924900BFC945 /* YYCAKeyframeAnimation */ = {
+		182A6D002010B3BF00BFC945 /* YYCAKeyframeAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				182A6CF92010925F00BFC945 /* YYCAKeyframeAnimation.h */,
-				182A6CFA2010925F00BFC945 /* YYCAKeyframeAnimation.m */,
+				182A6D012010B3BF00BFC945 /* YYCAKeyframeAnimation.m */,
+				182A6D022010B3BF00BFC945 /* YYCAKeyframeAnimation.h */,
 			);
 			path = YYCAKeyframeAnimation;
 			sourceTree = "<group>";
@@ -293,9 +301,9 @@
 			files = (
 				182A6CC3201079B900BFC945 /* ViewController.m in Sources */,
 				182A6CCE201079B900BFC945 /* main.m in Sources */,
-				182A6CFB2010925F00BFC945 /* YYCAKeyframeAnimation.m in Sources */,
+				182A6D042010B3BF00BFC945 /* YYCAKeyframeAnimation.m in Sources */,
 				182A6CC0201079B900BFC945 /* AppDelegate.m in Sources */,
-				182A6CF72010818400BFC945 /* YYCABasicAnimation.m in Sources */,
+				182A6D032010B3BF00BFC945 /* YYCABasicAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
